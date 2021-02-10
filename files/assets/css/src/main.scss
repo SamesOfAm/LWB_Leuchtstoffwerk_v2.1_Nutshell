@@ -1,0 +1,75 @@
+@import "variables";
+
+//__________________________Startseite
+
+@media screen and (min-width: 1300px) {
+  .start #header .mod_pageImage {
+    max-height: 831px !important;
+  }
+
+  #header .mod_customnav {
+    margin-top: -669px !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #header #metanav{
+   display: none;
+ }
+}
+
+
+
+#header .mod_customnav li:nth-child(1) a::before {
+  content: url('/files/layout/Picto_aktuelles.svg')
+}
+
+#header .mod_customnav li:nth-child(2) a::before {
+  content: url('/files/layout/Picto_04.svg')
+}
+
+#header .mod_customnav li:nth-child(3) a::before {
+  content: url('/files/layout/Picto_03.svg')
+}
+
+#header .mod_customnav li:nth-child(4) a::before {
+  content: url('/files/layout/Picto_01.svg')
+}
+
+#header .mod_customnav li:nth-child(5) a::before {
+  content: url('/files/layout/25_blau_und_weiss.svg')
+}
+
+#header .mod_customnav li:nth-child(6) a::before {
+  content: url('/files/layout/Picto_02.svg')
+}
+
+#header .mod_customnav li a::after {
+  //content: url('/files/layout/arr_right.svg');
+  display: inline-block;
+  width: 15px
+}
+
+
+
+
+//__________________________ENDE
+
+
+#header .mod_navigation ul.level_1 li:hover ul.level_2 {
+  min-width: 200px !important;
+}
+
+.ce_player{
+  display: flex;
+  justify-content: center;
+  video{
+    max-width: 748px;
+    width: 90vw;
+  }
+}
+
+
+.widget-captcha{
+  visibility: hidden;
+}

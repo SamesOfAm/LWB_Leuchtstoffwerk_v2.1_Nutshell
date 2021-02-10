@@ -1,0 +1,407 @@
+@import "variables";
+
+
+
+/* ____________________________________________________________ resp_850.css */
+
+@media screen and (max-width: 850px){
+.ba-text span {
+  font-size: 19px
+}
+
+.ba-link, .ba-text {
+  height: 90px
+}
+
+.ba-button {
+  width: 25%;
+  max-width: 100px
+}
+
+.ba-image {
+  float: none;
+  width: 90px;
+  height: 90px
+}
+
+#main {
+  font-size: 80%
+}
+
+#header .mod_customnav li {
+  width: 100%;
+  height: 90px
+}
+
+#header .mod_customnav li span {
+  border-bottom: 0px;
+  width: 80%
+}
+
+#header .mod_customnav li a::before {
+  width: 10%
+}
+
+#header .mod_customnav li a::after {
+  display: none
+}
+
+#header .header_logo, .menu_logo {
+  width: 15%;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-width: 80px;
+  max-width: 95px
+}
+
+#header .header_logo img, #header .menu_logo img {
+  width: 100%;
+  height: auto
+}
+
+#footer {
+  margin-top: 50px
+}
+
+#open_menu {
+  top: 49px
+}
+
+#open_close {
+  top: 51px
+}
+
+
+}
+
+
+
+
+
+/*_______________________________________________________________ resp_1300.css */
+
+@media screen and (max-width: 1300px)
+{
+#open_menu {
+  width: 45px;
+  right: 28px;
+  position: absolute;
+  top: 100px;
+  cursor: pointer
+}
+
+#open_close {
+  width: 40px;
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  top: 102px
+}
+
+#header .mod_navigation, #header #metanav {
+  display: none
+}
+
+#header .header_logo {
+  width: 50%;
+  max-width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none
+}
+
+.menu_logo {
+  width: 50%;
+  max-width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  position: relative;
+  margin-bottom: 45px;
+  height: 148px;
+  margin-top: 43px;
+  padding-left: 17px
+}
+
+.mobile_menu .inner {
+  background: #002f87;
+  height: 100%;
+  overflow-y: scroll;
+  position: relative
+}
+
+.mobile_menu_active body {
+  overflow-y: hidden
+}
+
+.mobile_menu {
+  width: 100% !important
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.contact img {
+  width: 45px
+}
+
+.mobile_menu hr {
+  border-top: 2px dotted #009ee3;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  height: 1px;
+  background: none;
+  margin-left: 28px;
+  margin-right: 28px
+}
+
+.mod_form.mobil {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 0px;
+  width: calc(100% - 60px);
+  float: none;
+  text-align: left;
+  padding-bottom: 20px
+}
+
+.mod_form.mobil label {
+  font: 1.65em 'Barlow', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  text-transform: none;
+  font-weight: 300;
+  width: 80px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  float: left
+}
+
+.mod_form.mobil input {
+  height: 30px;
+  background-color: #0056a8;
+  border: 0px;
+  float: left
+}
+
+.mod_form.mobil input.text {
+  font-family: 'Barlow', sans-serif;
+  color: #fff;
+  width: calc(100% - 90px);
+  font-weight: 400;
+  border: 0px;
+  border-radius: 0px;
+  font-size: 1.4em;
+  padding-left: 10px;
+  float: none
+}
+
+.mod_form.mobil .widget-submit {
+  background-image: url("../../files/layout/lupe.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  width: 35px;
+  cursor: pointer;
+  background-size: inherit;
+  border: 0px;
+  border-radius: 0px
+}
+
+.mobile_menu .mod_navigation a, .mobile_menu .mod_customnav a, .mobile_menu .mod_customnav strong, .mobile_menu .mod_changelanguage a, .mobile_menu .mod_navigation strong {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 1.65em;
+  line-height: 1.4em;
+  color: #fff;
+  text-decoration: none;
+  border-top: 1px dotted #009ee3;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px
+}
+
+.mobile_menu .mod_changelanguage a {
+  border-bottom: 1px dotted #009ee3
+}
+
+.mobile_menu .mod_navigation ul.level_2 li a, .mobile_menu .mod_navigation ul.level_2 li strong {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 1.35em;
+  line-height: 1.4em;
+  color: #fff;
+  text-decoration: none;
+  border-top: 0px dotted #009ee3;
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 6px
+}
+
+.mobile_menu .mod_customnav strong, .mobile_menu .mod_navigation strong, .mobile_menu .mod_customnav ul.level_2 li strong, .mobile_menu .mod_navigation ul.level_2 li strong {
+  color: #009ee3
+}
+
+.mobile_menu .mod_navigation strong.trail {
+  color: #fff
+}
+
+.mobile_menu .mod_navigation ul li.first a, .mobile_menu .mod_navigation ul li.first strong {
+  border-top: 0px dotted #009ee3
+}
+
+.mobile_menu .mod_navigation ul.level_2 {
+  padding-bottom: 15px
+}
+
+.mobile_menu .mod_navigation {
+  margin-top: 30px
+}
+
+.mobile_menu .mod_navigation, .mobile_menu .mod_customnav, .mobile_menu .mod_changelanguage {
+  padding-left: 28px;
+  padding-right: 28px
+}
+
+.mobile_menu .mod_navigation ul.level_1, .mobile_menu .mod_navigation ul.level_2, .mobile_menu .mod_customnav ul {
+  margin-bottom: 0px
+}
+
+.mobile_menu .submenu > a::after, .mobile_menu .submenu > span::after {
+  background-image: url("../../files/layout/arr_right.svg");
+  background-position: 0px 6px;
+  background-repeat: no-repeat;
+  content: ' ';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 40px;
+  text-align: center;
+  position: absolute;
+  right: 20px;
+  background-size: 12px
+}
+
+.mobile_menu .invisible {
+  display: none !important
+}
+
+}
+
+
+
+
+
+
+
+/* ___________________________________________________________ resp_1000.css */
+@media screen and (max-width: 1000px)
+{
+
+.ba-buttons {
+  margin-left: 0
+}
+
+.mod_breadcrumb {
+  display: none
+}
+
+body {
+  font-size: 70%
+}
+
+#header .mod_customnav {
+  margin-top: 20px;
+  margin-bottom: 0px
+}
+
+.start #header .mod_pageImage {
+  max-height: 40vh
+}
+
+h1.ce_headline {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 15px
+}
+
+h1 {
+  margin-top: 20px
+}
+
+h2 {
+  margin-bottom: 40px
+}
+
+#main .ce_image.picto {
+  width: 60px;
+  margin-top: -30px
+}
+
+.ce_accordion .accordion {
+  margin-top: 15px;
+  margin-bottom: 15px
+}
+
+#footer {
+  border-radius: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%
+}
+
+#footer .adresse, #footer .info, #footer .facebook, #footer .mod_customnav {
+  width: 100%;
+  margin: 0px;
+  text-align: center
+}
+
+#footer .facebook img {
+  margin: 0px
+}
+
+.footer_claim hr, .footer_claim p {
+  width: 100% !important;
+  float: none;
+  text-align: center;
+  margin: 0px;
+  max-width: 100%
+}
+
+#footer .footer_claim {
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+#footer .footer_logo {
+  padding-top: 40px;
+  margin-bottom: 40px
+}
+
+#footer .footer_logo img {
+  margin-bottom: 40px;
+  max-width: 100px
+}
+
+#footer p {
+  margin-bottom: 0px
+}
+
+#footer .mod_customnav {
+  margin-top: 30px;
+  margin-bottom: 20px
+}
+
+}

@@ -1,0 +1,176 @@
+// *
+// * Erdmann & Freunde - Nutshell
+// * BASE Contao Framework
+// * erdmann-freunde.de/nutshell/
+// *
+// * Lizenziert unter MIT OPEN SOURCE 
+// *
+
+//
+// COMPONENTS/MEDIA
+// --------------------------------------------------
+
+// VARIABLES
+html {
+  --gallery__gutter: var(--grid__gutter);
+  --gallery__gutter--half: calc(var(--gallery__gutter) / 2);
+}
+
+// USED FROM _variables.scss
+
+// --------------------------------------------------
+.image--left img {
+  text-align: left;
+  margin-left: 0;
+}
+
+.image--right img {
+  text-align: right;
+  margin-right: 0;
+}
+
+.image--center img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ce_gallery {
+  margin-bottom: var(--base-spacing-unit);
+  
+  > ul {  
+    @include make-row();
+    
+    grid-row-gap: var(--grid__gutter);
+    
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  
+    li {    
+      @extend %column-floating;
+    }
+  }
+  
+  .cols_2 {
+    li {
+      @include make-col(6);
+    }
+  }
+  
+  .cols_3 {
+    li {
+      @include make-col(6);
+      
+      @include media-query(screen-md) {
+        @include make-col(4);
+      }
+    }
+  }
+  
+  .cols_4 {
+    li {
+      @include make-col(6);
+      
+      @include media-query(screen-md) {
+        @include make-col(3);
+      }
+    }
+  }
+  
+  .cols_5 {
+    li {
+      @include make-col(6);
+      
+      @include media-query(screen-md) {
+        @include make-col(2);
+      }
+    }
+  }
+  
+  .cols_6 {
+    li {
+      @include make-col(6);
+      
+      @include media-query(screen-md) {
+        @include make-col(2);
+      }
+    }
+  }
+  
+  img {
+    display: block;
+  }
+}
+
+.ce_player,
+.ce_youtube {
+  
+  .inside,
+  .mejs-video,
+  .mejs__video {
+    margin-left: auto;
+    margin-right: auto;
+  }
+    
+  .mejs-video,
+  .mejs__video {
+		width: 100% !important;
+		height: auto !important;
+		padding-top: 56.25%;
+	}
+	
+	.mejs-audio,
+	.mejs__audio {
+  	margin-top: 30px;
+  	
+    audio {
+    	height: auto;
+  	}
+  }
+	
+	.mejs-overlay, 
+	.mejs-poster,
+	.mejs__overlay,
+	.mejs__poster {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	
+	.mejs-video {
+  	.mejs-mediaelement video,
+  	.mejs-mediaelement .me-plugin,
+  	.mejs-mediaelement embed {
+  		position: absolute;
+  		top: 0; left: 0; right: 0; bottom: 0;
+  		width: 100% !important;
+  		height: 100% !important;
+  	}
+  }
+  
+  .mejs__video {
+  	.mejs__mediaelement video,
+  	.mejs__mediaelement .me__plugin,
+  	.mejs__mediaelement embed {
+  		position: absolute;
+  		top: 0; left: 0; right: 0; bottom: 0;
+  		width: 100% !important;
+  		height: 100% !important;
+  	}
+  }
+}
+
+.ce_youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+  height: auto;
+  
+  iframe {
+    border: 0;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

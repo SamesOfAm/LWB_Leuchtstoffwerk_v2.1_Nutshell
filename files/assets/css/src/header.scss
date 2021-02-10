@@ -1,0 +1,11 @@
+@import "variables";
+
+#header #metanav {
+  float: left;
+  display: inline-block;
+  margin-left: calc(10.5% - 108px);
+  margin-right: 18px;
+  margin-top: 102px;
+  width: 74px;
+  text-align: right;
+}
