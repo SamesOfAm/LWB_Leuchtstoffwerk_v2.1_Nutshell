@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="134.119.86.200" id="ecbbeb68-a204-4ba5-9bb9-1c566b2f5021" port="22" customName="LWB_dcf" nameFormat="CUSTOM" username="ssh-620328-kkadmin">
+        <option name="customName" value="LWB_dcf" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

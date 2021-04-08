@@ -321,7 +321,8 @@ p {
 }
 
 .ce_text li {
-  list-style-image: url("../../files/layout/li.svg");
+  //list-style-image: url("../../files/layout/li.svg");
+  list-style: disc;
   padding-left: 10px
 }
 

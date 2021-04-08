@@ -1,22 +1,63 @@
 @import "variables";
 
+
+@media screen and (max-width: 800px) {
+  table{
+    font-size: 6px;
+    width: unset !important;
+  }
+}
+
+
+
+
+
+// ________________________ Externe Verlinkung der Partner Firmen
+
+#world-icon{
+  width: 14px;
+  cursor: pointer;
+  img{
+    filter: invert(10%) sepia(71%) saturate(3719%) hue-rotate(215deg) brightness(99%) contrast(102%);
+  }
+}
+
+#world-icon:hover img{
+  filter: invert(67%) sepia(67%) saturate(7452%) hue-rotate(173deg) brightness(103%) contrast(101%);
+}
+
+#world-nav{
+  display: none;
+  background-color: white;
+  transition: 0.4s;
+  position: absolute;
+  width: 212px;
+  transform: translateX(-29px);
+  text-align: left !important;
+  a{
+    display: flex;
+    justify-content: center;
+    img{
+      transition: 0.4s;
+      width: 200px;
+      object-fit: cover;
+    }
+    img:hover{
+      transform: translateX(10px);
+      transition: 0.4s;
+    }
+  }
+}
+
+.world-nav-mmenu{
+  width: 318px;
+  margin: 0 auto;
+}
+
+
+
+
 //__________________________Startseite
-
-@media screen and (min-width: 1300px) {
-  .start #header .mod_pageImage {
-    max-height: 831px !important;
-  }
-
-  #header .mod_customnav {
-    margin-top: -669px !important;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  #header #metanav{
-   display: none;
- }
-}
 
 
 
@@ -72,4 +113,30 @@
 
 .widget-captcha{
   visibility: hidden;
+}
+
+
+.flexbox-1{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  p{
+    text-align: center;
+  }
+}
+
+select.select{
+  background-color: rgba(0,47,135,.04);
+  border-bottom: 1px solid rgba(0,45,92,.5);
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  border: 0;
+  padding: 7px 0;
+  display: block;
+  margin-top: 8px;
+}
+
+sub{
+  vertical-align: sub !important;
 }
