@@ -1,21 +1,36 @@
 @import "variables";
 
-@media screen and (min-width: 1300px) {
-  .start #header .mod_pageImage img{
-    max-height: 512px;
-    object-fit: cover;
-  }
 
-  #header .mod_customnav {
-    //margin-top: -669px !important;
+
+
+#header .mod_pageImage img,
+.video_header{
+  width: 100%;
+  height: unset;
+  object-fit: cover;
+  max-height: 58vh;
+}
+@media screen and (max-height: 850px){
+  #header .mod_pageImage img,
+  .video_header{
+    height: 38vh;
   }
 }
 
+
 @media screen and (max-width: 1300px) {
+  #header .mod_pageImage img,
+  .video_header {
+    height: 38vh;
+  }
+}
+
+@media screen and (max-width: 1300px){
   #header #metanav{
     display: none !important;
   }
 }
+
 
 .headline-text{
   max-width: 1120px;

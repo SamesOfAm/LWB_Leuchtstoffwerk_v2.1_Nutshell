@@ -1,5 +1,101 @@
 @import "variables";
 
+// Before / After Image Slider
+
+
+.label_1, .label_2{
+  position: absolute;
+  width: 150px;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  span{
+    color: black;
+    font-size: 20px;
+    margin: 7px 10px;
+    display: block;
+  }
+}
+
+
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.ba-slider img {
+  width: 100%;
+  display:block;
+}
+
+.resize {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+
+.handle { /* Line */
+  position:absolute;
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+
+  background: white;
+  cursor: ew-resize;
+}
+
+.handle:after { /* Button */
+  position: absolute;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -31px;
+
+  content:'\21d4';
+  color:#009ee3;
+  font-weight:bold;
+  font-size:36px;
+  text-align:center;
+  line-height:59px;
+
+  background: white;
+  border:1px solid white;
+  border-radius: 50%;
+  transition:all 0.3s ease;
+  //box-shadow:
+  //        0 2px 6px rgba(0,0,0,.3),
+  //        inset 0 2px 0 rgba(255,255,255,.5),
+  //        inset 0 60px 50px -30px #ffd466;
+}
+
+.draggable:after {
+  //width: 48px;
+  //height: 48px;
+  //margin: -24px 0 0 -24px;
+  //line-height:48px;
+  //font-size:30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .handle:after {
+    width: 45px;
+    height: 45px;
+    margin: -24px 0 0 -21px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+}
+
+
+
+
+
 // Zeitstrahl in "Über uns"
 .timeline{
 
@@ -37,12 +133,13 @@
     }
     .ce_text_inner{
       border-right: 3px solid #e9e9e9;
-      padding-right: 66px;
+      padding-right: 66.2px;
     }
   }
 
   .ce_text_inner{
-    max-width: 335px;
+    //
+    width: 335px;
     opacity: 0;
   }
 
@@ -68,7 +165,7 @@
   h3{
     border: 2px solid #2A9AD6;
     display: inline-block;
-    min-width: 58px;
+    //min-width: 58px;
     padding: 8px;
     font-size: 25px;
   }
